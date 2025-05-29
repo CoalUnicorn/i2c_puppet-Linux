@@ -153,7 +153,7 @@ static void transition_to(struct list_item * const p_item, const enum key_state 
                         } else if (shift) {
                           key = '{';
                         } else if (control) {
-                          key = 'x';
+                          key =0x7F; // DEL
                         } else {
                           key = '=';
                         }

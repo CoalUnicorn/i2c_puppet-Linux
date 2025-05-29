@@ -13,10 +13,10 @@ The following changes have been made
 - The Sym key now acts as a Control key, so SYM+C is Control-C
 - The four top button keys are now used to provide the missing characters.
 
-The original definiton of the keys were this. I'm including the
-spacebar, newline/enter, backspace, Microphone and Spkeaer keys
+The original definition of the keys was this. I'm including the
+spacer, newline/enter, backspace, Microphone and Speaker keys
 because they provide characters not indicated on the key. For
-instance, ALT + spacebar provides TAB, and ALT+NewLine is the pipe character. 
+instance, ALT + spacer provides TAB, and ALT+NewLine is the pipe character. 
 
 
 |      | L1    | L2    |    R1 |    R2 | SPKR | Mic| BS | NL |  SPACE  |
@@ -31,21 +31,22 @@ instance, ALT + spacebar provides TAB, and ALT+NewLine is the pipe character.
 This firmware adds the following mappings
 
 
-|       | L1     | L2    |    R1 |    R2 | SPKR | Mic| BS| NL |  SPACE  |
-| ------|--------|-------|-------|-------|------|----|---|----|---------|
-| none  | ESCAPE |  %    |  =    |  \\   |  $   |  ~ | \b| \n | SPACE   |
-| Alt   |  >     |  ]    |  }    |  &    |  \`  |  0 |   | \| |  TAB    |
-| Shift |  <     |  [    |  {    |  ^    |  $   |  ~ | \b|    |         |
-| Sym   |  x     |  x    |  x    |  x    |  $   |  ~ | \b|    |         |
+|       | L1     | L2    | R1  |    R2 | SPKR | Mic| BS| NL |  SPACE  |
+| ------|--------|-------|-----|-------|------|----|---|----|---------|
+| none  | ESCAPE |  %    | =   |  \\   |  $   |  ~ | \b| \n | SPACE   |
+| Alt   |  >     |  ]    | }   |  &    |  \`  |  0 |   | \| |  TAB    |
+| Shift |  <     |  [    | {   |  ^    |  $   |  ~ | \b|    |         |
+| Sym   |  x     |  x    | DEL |  x    |  $   |  ~ | \b|    |         |
 
 
 
-I tried to make the bracket characters easierr to remember by using
+I tried to make the bracket characters easier to remember by using
 Shift+ to indicate the left-pointing brackets, and Alt+ corresponds to
 the same right-pointing bracket. You can redefine these keys if you
-prefer a different arraingment.
+prefer a different arrangement.
 
-Currently, SYM+<top button keys> produces an 'x' to indicate some value can be inserted.
+Currently, only SYM+R1 is mapped to DEL (useful to access BIOS),
+the rest of SYM+<top button keys> produces an 'x' to indicate some value can be inserted.
 I'm considering mapping these to the 4 arrow keys
 
 
@@ -98,6 +99,6 @@ the username or password characters.
 ## TODO
 
 Currently - the SYM+Button keys are defined as the character "x" to indicate it's not been specified.
-I'l like to make these keys to the 4 arrow keys.
+I'll like to make these keys to the 4 arrow keys.
 
 Also - it might be possible to create key combinations by combining the modified keys, like SYM+Alt+key
